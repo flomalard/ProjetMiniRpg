@@ -68,11 +68,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const persoPicture = document.querySelector(".perso img");
     if (character == "feu") {
-      persoPicture.src ="../../img/perso1.jpg";
+      persoPicture.src ="../img/perso1.jpg";
     } else if (character == "eau") {
-      persoPicture.src ="../../img/perso4.jpg";
+      persoPicture.src ="../img/perso4.jpg";
     } else {
-      persoPicture.src ="../../img/perso3.jpg";
+      persoPicture.src ="../img/perso3.jpg";
     }
     
     persoHealth = persoMaxHealth;
@@ -105,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function randomPicture() {
     const ennemiPictures = [
-      "../../img/dragon1.jpg",
-      "../../img/dragon2.jpg",
-      "../../img/goblin1.jpg",
-      "../../img/goblin2.jpg",
-      "../../img/monstre1.jpg",
-      "../../img/monstre2.jpg",
+      "../img/dragon1.jpg",
+      "../img/dragon2.jpg",
+      "../img/goblin1.jpg",
+      "../img/goblin2.jpg",
+      "../img/monstre1.jpg",
+      "../img/monstre2.jpg",
     ];
     const randomIndex = Math.floor(Math.random() * ennemiPictures.length);
     const randomImage = ennemiPictures[randomIndex];

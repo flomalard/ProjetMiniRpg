@@ -14,7 +14,7 @@ h1 {
 }
 
 .bodyContainer {
-    background-image: url("../img/carte5.jpg");
+    background-image: url("./img/carte5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
