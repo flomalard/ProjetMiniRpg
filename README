@@ -1,3 +1,15 @@
-Voici notre projet de miniRPG
+Voici un projet de mini-RPG réalisé en groupe de 3 par Andrea, Antoine et Florent, dans le cadre de notre formation à la 3W Academy.
 
-en cours...
+Nous avions une douzaine d'heures pour déterminer le projet, le mettre en place en partant de zéro et enfin le mettre en ligne.
+
+Nous avons commencé par définir le projet : un mini RPG sur 3 pages, comprenant une page d'accueil avec un choix de personnage, une sélection de difficultés et enfin un bouton de redirection une fois ces choix effectués. 
+Ensuite, nous devions développé une page "carte" qui permet au personnage de se déplacer d'un point d'intérêt à un autre. 
+Enfin, nous avons créé une page de combat au tour par tour avec plusieurs actions possibles pour le personnage, une boîte de dialogue récapitulative du combat, et une fenêtre modale pour la fin du combat, 
+indiquant le résultat et offrant la possibilité de rejouer le combat ou de passer à la suite.
+
+En raison de la contrainte de temps, nous avons décidé de commencer par la page de combat, qui constitue le cœur du jeu, et sur laquelle nous avons atteint tous nos objectifs. 
+Ensuite, nous avons enchaîné avec la page d'accueil, qui correspond également à notre maquette. Malheureusement, faute de temps, nous n'avons pas pu commencer la construction de la troisième page.
+
+Cet exercice nous a permis de travailler en groupe sur Git pour la première fois. Nous avons réalisé les difficultés liées à la fusion de notre travail, car nous avions des habitudes de développement différentes, et nous avons dû nous adapter les uns aux autres.
+
+Nous nous sommes limités à l'utilisation de HTML, CSS et JavaScript.
