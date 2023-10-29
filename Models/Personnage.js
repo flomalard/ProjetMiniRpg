@@ -16,12 +16,13 @@ class Personnage {
       this.sante -= degats;
       console.log(`${this.nom} perd ${degats} points de santé. Santé restante : ${this.sante}`);
     }
-  
-    boirePotion() {
-      this.sante += 50;
-      this.mana += 50;
-      console.log(`${this.nom} boit une potion de soin et restaure 50 points de santé et de mana.`);
-    }
+    
+    // à venir
+    //boirePotion() {
+    //  this.sante += 50;
+    //  this.mana += 50;
+    //  console.log(`${this.nom} boit une potion de soin et restaure 50 points de santé et de mana.`);
+    //}
   }
   
   export class Feu extends Personnage {

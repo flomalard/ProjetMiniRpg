@@ -1,6 +1,7 @@
 import { Feu, Eau, Terre } from "../../Models/Personnage.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  
   // Variables
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -14,34 +15,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const ennemiManaElement = document.querySelector(".ennemiMana");
   const difficultyDisplay = document.querySelector("#selected-difficulty")
 
-  const fireFighter = new Feu("Fire_Fighter");
-  const waterWarrior = new Eau ("Water_Warrior");
-  const earthDefender = new Terre ("Earth_Defender");
-
   if (character == "feu") {
+    const fireFighter = new Feu("Fire_Fighter");
     specialAttackButton.textContent = "Explosion de Feu";
     var persoHealth = fireFighter.sante;
     var persoMaxHealth = fireFighter.sante;
     var persoMana = fireFighter.mana;
     var persoMaxMana = fireFighter.mana;
-    persoHealthElement.textContent = `${persoHealth} / ${persoMaxHealth}` ;
-    persoManaElement.textContent = `${persoMana} / ${persoMaxMana}`;
   } else if (character == "eau") {
+    const waterWarrior = new Eau ("Water_Warrior");
     specialAttackButton.textContent = "Tsunami";
     var persoHealth = waterWarrior.sante;
     var persoMaxHealth = waterWarrior.sante;
     var persoMana = waterWarrior.mana;
     var persoMaxMana = waterWarrior.mana;
-    persoHealthElement.textContent = `${persoHealth} / ${persoMaxHealth}` ;
-    persoManaElement.textContent = `${persoMana} / ${persoMaxMana}`;
   } else if (character == "terre") {
+    const earthDefender = new Terre ("Earth_Defender");
     specialAttackButton.textContent = "Lancé de Pierre";
     var persoHealth = earthDefender.sante;
     var persoMaxHealth = earthDefender.sante;
     var persoMana = earthDefender.mana;
     var persoMaxMana = earthDefender.mana;
-    persoHealthElement.textContent = `${persoHealth} / ${persoMaxHealth}` ;
-    persoManaElement.textContent = `${persoMana} / ${persoMaxMana}`;
   }
 
   let init = true;
@@ -51,13 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log(difficulty)
   console.log(computerDifficulty)
   
-
   let ennemiHealth = 0;
   let ennemiMaxHealth = 0;
   let ennemiMana = 0;
   let ennemiMaxMana = 0;
   
-  initialization()
 
   //Fonctions
 
@@ -325,6 +317,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Code exécuté
 
+  persoHealthElement.textContent = `${persoHealth} / ${persoMaxHealth}` ;
+  persoManaElement.textContent = `${persoMana} / ${persoMaxMana}`;
+
+  initialization()
+
   if (difficulty == 0) {
     difficultyDisplay.textContent = "Facile";
   } else if (difficulty == 3) {
@@ -357,14 +354,14 @@ document.addEventListener("DOMContentLoaded", function () {
       randomPicture();
 
       computerDifficulty++;
-      initialization(computerDifficulty);
+      initialization();
     });
 
   document
     .getElementById("replay-modal-button")
     .addEventListener("click", function () {
       document.getElementById("victory-modal").style.display = "none";
-      initialization(computerDifficulty);
+      initialization();
     });
 
   addToChat("Le combat commence. C'est à votre tour.");
